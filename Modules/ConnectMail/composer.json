@@ -1,0 +1,27 @@
+{
+    "name": "nwidart/connectmail",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "require": {
+        "acelle/sdk-php": "dev-master"
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ConnectMail\\": ""
+        }
+    }
+}

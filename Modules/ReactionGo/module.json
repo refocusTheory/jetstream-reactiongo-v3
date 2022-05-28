@@ -1,0 +1,13 @@
+{
+    "name": "ReactionGo",
+    "alias": "reactiongo",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ReactionGo\\Providers\\ReactionGoServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

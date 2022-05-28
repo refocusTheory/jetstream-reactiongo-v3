@@ -1,0 +1,13 @@
+{
+    "name": "ConnectMail",
+    "alias": "connectmail",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ConnectMail\\Providers\\ConnectMailServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

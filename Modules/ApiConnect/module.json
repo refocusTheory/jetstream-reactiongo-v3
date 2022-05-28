@@ -1,0 +1,13 @@
+{
+    "name": "ApiConnect",
+    "alias": "apiconnect",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ApiConnect\\Providers\\ApiConnectServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

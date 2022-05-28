@@ -1,0 +1,13 @@
+{
+    "name": "Google",
+    "alias": "google",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Google\\Providers\\GoogleServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Fusion",
+    "alias": "fusion",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Fusion\\Providers\\FusionServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

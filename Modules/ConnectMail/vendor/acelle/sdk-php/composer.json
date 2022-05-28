@@ -1,0 +1,14 @@
+{
+    "name": "acelle/sdk-php",
+    "description": "PHP API SDK Client for Acelle Mail",
+    "require": {
+        "monolog/monolog": "*",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {"Acelle\\": "src/"}
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "YouTube",
+    "alias": "youtube",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\YouTube\\Providers\\YouTubeServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

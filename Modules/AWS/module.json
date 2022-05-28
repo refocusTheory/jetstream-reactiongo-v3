@@ -1,0 +1,13 @@
+{
+    "name": "AWS",
+    "alias": "aws",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AWS\\Providers\\AWSServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

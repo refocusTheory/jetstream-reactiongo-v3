@@ -1,0 +1,27 @@
+{
+    "name": "nwidart/dashboard",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "require": {
+        "skagarwal/google-places-api": "^1.7",
+        "laravelcollective/html": "^6.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Dashboard\\": ""
+        }
+    }
+}

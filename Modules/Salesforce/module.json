@@ -1,0 +1,13 @@
+{
+    "name": "Salesforce",
+    "alias": "salesforce",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Salesforce\\Providers\\SalesforceServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

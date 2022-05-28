@@ -1,0 +1,19 @@
+{
+    "Dashboard": true,
+    "FileManager": true,
+    "Google": true,
+    "Facebook": true,
+    "Zoho": true,
+    "Salesforce": true,
+    "Manager": true,
+    "YouTube": true,
+    "Shopify": true,
+    "ConnectMail": true,
+    "Socialite": true,
+    "Fusion": true,
+    "Blueprint": true,
+    "AWS": true,
+    "ApiConnect": true,
+    "Jetstream": true,
+    "ReactionGo": true
+}
