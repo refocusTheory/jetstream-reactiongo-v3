@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Auth;
 use App\Models\Channel;
+use App\Models\User;
+use App\Models\UserOauth;
+use App\Models\UserChannel;
+use Storage;
 
 class DashboardController extends Controller
 {
@@ -56,12 +60,23 @@ class DashboardController extends Controller
         // $channel->settings = json_encode($settings,true);
         // $channel->save();
 
-
-
+        $user = User::where('email', Auth::user()->email)->with('userOauth')->first();
 
         $pageConfigs = ['pageHeader' => false];
+
+        // $banner = \Storage::disk('s3')->url(\Auth::user()->banner_photo_url);
+
+        return view('dashboard', [
+            'pageConfigs' => $pageConfigs,
+            // 'banner'=> $banner,
+            'user' => $user
+        ]);
+
+
+
+        // $pageConfigs = ['pageHeader' => false];
   
-        return view('/dashboard', ['pageConfigs' => $pageConfigs]);
+        //return view('/dashboard', ['pageConfigs' => $pageConfigs]);
     }
 
     public function testhtml(){

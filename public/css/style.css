@@ -9,3 +9,33 @@ NOTE:
 ------
 PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
 WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+/* Color Theme Swatches in Hex */
+/* .UI/UX-1-hex { color: #06090D; }
+.UI/UX-2-hex { color: #121B26; }
+.UI/UX-3-hex { color: #253140; }
+.UI/UX-4-hex { color: #364659; }
+.UI/UX-5-hex { color: #485B73; }
+
+/* Color Theme Swatches in RGBA */
+/* .UI/UX-1-rgba { color: rgba(5, 8, 12, 1); }
+.UI/UX-2-rgba { color: rgba(17, 26, 38, 1); }
+.UI/UX-3-rgba { color: rgba(36, 48, 63, 1); }
+.UI/UX-4-rgba { color: rgba(54, 69, 89, 1); }
+.UI/UX-5-rgba { color: rgba(72, 90, 114, 1); } */
+
+/* Color Theme Swatches in HSLA */
+/* .UI/UX-1-hsla { color: hsla(213, 37, 3, 1); }
+.UI/UX-2-hsla { color: hsla(213, 36, 11, 1); }
+.UI/UX-3-hsla { color: hsla(213, 26, 19, 1); }
+.UI/UX-4-hsla { color: hsla(213, 24, 28, 1); }
+.UI/UX-5-hsla { color: hsla(213, 22, 36, 1); } */ */
+
+
+
+.dark-layout .horizontal-layout .horizontal-menu-wrapper .header-navbar.navbar-horizontal.navbar-dark {
+    background: #161d31 !important;
+}
+.dark-layout .horizontal-layout .horizontal-menu-wrapper .header-navbar.navbar-shadow {
+    box-shadow: none; 
+}
