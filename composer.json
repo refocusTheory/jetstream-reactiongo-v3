@@ -28,6 +28,7 @@
     "pulkitjalan/google-apiclient": "^6.0",
     "revolution/laravel-google-sheets": "^6.0",
     "signifly/laravel-shopify": "^1.2",
+    "silviolleite/laravelpwa": "^2.0",
     "skagarwal/google-places-api": "^2.0",
     "socialiteproviders/instagram": "^4.1",
     "socialiteproviders/linkedin": "^4.1",

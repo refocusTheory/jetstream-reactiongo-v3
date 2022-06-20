@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 
-class UserAds extends Model
+class UserAd extends Model
 {
     use HasFactory;
 
@@ -24,7 +24,7 @@ class UserAds extends Model
         'analytics'
     ];
     
-    protected $table = 'users_channels';
+    protected $table = 'user_ads';
 
     public $timestamps = false;
 

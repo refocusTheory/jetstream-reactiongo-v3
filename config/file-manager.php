@@ -1,7 +1,14 @@
 <?php
+// use Auth;
+//use Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository;
+// use Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository;
 
-use Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository;
-use Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository;
+
+// use Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository;
+//use Alexusmai\LaravelFileManager\Services\ACLService\ConfigACLRepository;
+use App\Http\DBACLRepository;
+use App\Http\S3ConfigRepository;
+
 
 return [
 
@@ -10,15 +17,15 @@ return [
      *
      * Default - DefaultConfigRepository get config from this file
      */
-    'configRepository' => DefaultConfigRepository::class,
-
+    // 'configRepository' => DefaultConfigRepository::class,
+    'configRepository' => S3ConfigRepository::class,
     /**
      * ACL rules repository
      *
      * Default - ConfigACLRepository (see rules in - aclRules)
      */
-    'aclRepository' => ConfigACLRepository::class,
-
+    //'aclRepository' => ConfigACLRepository::class,
+    'aclRepository' => DBACLRepository::class,
     //********* Default configuration for DefaultConfigRepository **************
 
     /**
@@ -31,21 +38,21 @@ return [
      * List of disk names that you want to use
      * (from config/filesystems)
      */
-    'diskList' => ['Blueprint'],
+    'diskList' => ['Blueprint','Jetstream'],
 
     /**
      * Default disk for left manager
      *
      * null - auto select the first disk in the disk list
      */
-    'leftDisk' => 'Blueprint',null,null,
+    'leftDisk' => 'Blueprint',//,null,null,
 
     /**
      * Default disk for right manager
      *
      * null - auto select the first disk in the disk list
      */
-    'rightDisk' => 'Blueprint',null,
+    'rightDisk' => 'Blueprint',//,null,
 
     /**
      * Default path for left manager
@@ -126,7 +133,7 @@ return [
      *
      * whitelist - Deny anything(access - 0 - deny), that not allowed by the ACL rules list
      */
-    'aclStrategy' => 'blacklist',
+    'aclStrategy' => 'whitelist',
 
     /**
      * ACL Rules cache

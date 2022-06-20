@@ -17,7 +17,7 @@
   <div class="row">
 
     <!-- User Sidebar -->
-    <div class="col-xl-2 col-lg-3 col-md-3 order-1 order-md-0">
+    <div class="col-xl-3 col-lg-3 col-md-3 order-1 order-md-0">
 
       <!-- User Card -->
       <div class="card">
@@ -78,7 +78,7 @@
               <a href="javascript:;" class="btn btn-primary me-1" data-bs-target="#editUser" data-bs-toggle="modal"
                 >Edit</a
               >
-              <a href="javascript:;" class="btn btn-outline-danger suspend-user">Suspended</a>
+              <a href="/file-manager" class="btn btn-outline-danger suspend-user">Suspended</a>
             </div>
           </div>
         </div>

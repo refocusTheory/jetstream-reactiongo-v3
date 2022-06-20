@@ -10,7 +10,11 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Jetstream\HasTeams;
 use Laravel\Sanctum\HasApiTokens;
-use App\Models\Channel;
+// use App\Models\Channel;
+// use App\Models\UserChannel;
+// use App\Models\UserDetail;
+// use App\Models\UserOauth;
+// use App\Models\UserAd;
 
 class User extends Authenticatable
 {
@@ -60,12 +64,49 @@ class User extends Authenticatable
         'profile_photo_url',
     ];
 
-    public function channel(){
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    // public function channel(){
 
-        return $this->hasMany( Channel::class );
-    }
+    //     return $this->hasMany( Channel::class );
+    // }
+
+    // /**
+    //  * The accessors to append to the model's array form.
+    //  *
+    //  * @var array
+    //  */
     public function userOauth(){
 
         return $this->hasOne( UserOauth::class );
     }
+
+    public function userDetail(){
+
+        return $this->hasOne( UserDetail::class );
+    }
+
+    // /**
+    //  * The accessors to append to the model's array form.
+    //  *
+    //  * @var array
+    //  */
+    public function userAd()
+    {
+        return $this->hasMany(UserAd::class);
+    }
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    public function userChannel(){
+
+        return $this->hasMany( UserChannel::class );
+    }
+
 }

@@ -1,9 +1,41 @@
-@extends('filemanager::layouts.master')
+@extends('layouts/contentLayoutMaster')
+
+
+@section('title', 'Home')
+
+@section('page-style')
+  {{-- Page Css files --}}
+
+  <link rel="stylesheet" href="{{ asset('vendor/file-manager/css/file-manager.css') }}">
+@endsection
 
 @section('content')
-    <h1>Hello World</h1>
+<div id="user-profile">
 
-    <p>
-        This view is loaded from module: {!! config('filemanager.name') !!}
-    </p>
+  <!-- profile header -->
+
+  <!--/ profile header -->
+
+  <div class="row">
+
+  <div style="height: 100vh;">
+    <div id="fm"></div>
+</div>
+
+  </div>
+
+</div>
 @endsection
+
+@section('page-script')
+  {{-- Page js files --}}
+
+  <script src="{{ asset('vendor/file-manager/js/file-manager.js') }}"></script>
+  <script>
+    $(document).ready(function () {
+      var node = document.querySelector('[title="Grid"]');
+    node.click();
+});
+  </script>
+@endsection
+
